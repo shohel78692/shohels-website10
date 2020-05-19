@@ -1,0 +1,101 @@
+*{
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+}
+body{
+	background: #000;
+}
+.nav-bar{
+	display: flex;
+	padding: 2% 4%;
+}
+.nav-logo img{
+	width: 135px;
+}
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 16px;
+}
+.nav-links ul li a{
+	color: #ffea00;
+	text-decoration: none;
+	font-size: 20px;
+}
+.hero{
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: absolute;
+	text-align: center;
+}
+h1{
+	font-size: 50px;
+	color: #fff;
+	-webkit-text-stroke: 1px #ffea00;
+	background-image: url(logo3.png);
+	-webkit-clip: text;
+	background-position: 0 0;
+	animation: back 20s linear infinite;
+	margin-bottom: 4%;
+}
+
+@keyframes back{
+	100%{
+		background-position: 2000px 0;
+	}
+}
+.btn{
+	width: 160px;
+	height: 50px;
+	border: 2px solid #ffea00;
+	color: #ffea00;
+	margin: auto;
+	cursor: pointer;
+	position: relative;
+}
+.btn p{
+	font-size: 20px;
+	padding-top: 12px;
+	font-weight: bold;
+}
+/*span{
+	width: 80px;
+	height: 80px;
+	top: 120px;
+    position: absolute;
+    background: #ffea00;
+    border-radius: 50%;
+    z-index: -1;
+    transition: 1s;
+}
+span:nth child(1){
+	left: -20px;
+}
+span:nth child(2){
+	left: 30px;
+}
+span:nth child(3){
+	left: 80px;
+}
+span:nth child(4){
+	left: 125px;
+}
+.btn:hover span{
+     top: -10px;
+}*/
+@media (max-width: 700px){
+	.hero h1{
+		font-size: 26px;
+		margin-bottom: 10%;
+	}
+	.nav-links ul li{
+		display: block;
+	}
+}
